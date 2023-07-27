@@ -1,6 +1,7 @@
 
-git pull kr main
+git pull lan main
 
 
 git push gitee main
+
 
