@@ -3,8 +3,7 @@
  */
 //此处填写京东账号cookie。
 let CookieJDs = [
-  '',//账号一ck,例:pt_key=XXX;pt_pin=XXX;
-  '',//账号二ck,例:pt_key=XXX;pt_pin=XXX;如有更多,依次类推
+  'pt_key=AAJk1iktADC8BIwbQ2oRKge3yiz700FYjpxnoJ1UGcpADhxK9aarQ1fczuO2wntX_Ej8BTfZ9JM; pt_pin=wszl1987;',//账号一ck,例:pt_key=XXX;pt_pin=XXX;
 ]
 let IP='';
 // 判断环境变量里面是否有京东ck
@@ -166,7 +165,7 @@ let nameConfig = process.env.ShareCodeConfigName
 let envName = process.env.ShareCodeEnvName
 if (nameChinese && nameConfig && envName) {
     SetShareCodesEnv(nameChinese, nameConfig, envName)
-} 
+}
 function formatdate(date) {
     const year = date.getFullYear();
     const month = ('0' + (date.getMonth() + 1)).slice(-2);
