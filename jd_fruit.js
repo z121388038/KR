@@ -14,15 +14,7 @@ epxort FRUIT_DELAY = '1000',设置等待时间(毫秒)，默认请求5次接口�
 const $ = new Env('东东农场-任务');
 let cookiesArr = [], cookie = '', jdFruitShareArr = ['9fbdea44659442bdbeaa23892292aaba'], isBox = false, notify, newShareCodes, allMessage = '';
 //助力好友分享码(最多3个,否则后面的助力失败),原因:京东农场每人每天只有3次助力机会
-let shareCodes = [
-    '9fbdea44659442bdbeaa23892292aaba',
-    '177153e57b63434c9293b1faee317141',
-    '2dcccc332d304817a598c50469f09e12',
-    '84e1ae83d94d40fcb02e831a92e26aa9',
-    'e05d2f7cce5e462d8f08be977b4e9ffe',
-    '8baa1f6a43954c2ebc71008a11cf8096',
-    '1ecffdb4b0fd4329ad8d25446bdee2a1'
-]
+let shareCodes = []
 const dy = require('./function/dylanz')
 let message = '', subTitle = '', option = {}, isFruitFinished = false, ct = 0;
 const retainWater = 100;//保留水滴大于多少g,默认100g;
