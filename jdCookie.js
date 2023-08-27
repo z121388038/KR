@@ -2,9 +2,8 @@
 此文件为Node.js专用。其他用户请忽略
  */
 //此处填写京东账号cookie。
-let CookieJDs = [
-  'pt_key=AAJk1iktADC8BIwbQ2oRKge3yiz700FYjpxnoJ1UGcpADhxK9aarQ1fczuO2wntX_Ej8BTfZ9JM; pt_pin=wszl1987;',//账号一ck,例:pt_key=XXX;pt_pin=XXX;
-]
+const { COOKIES } = require('./utilsMy/const')
+let CookieJDs = Object.values(COOKIES)
 let IP='';
 // 判断环境变量里面是否有京东ck
 if (process.env.JD_COOKIE) {

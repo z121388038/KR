@@ -1,22 +1,24 @@
 /*
- * @Author: ccwav https://github.com/ccwav/QLScript2 
- 
+ * @Author: ccwav https://github.com/ccwav/QLScript2
+
  * sendNotify 推送通知功能 (text, desp, params , author , strsummary)
  * @param text 通知标题  (必要)
  * @param desp 通知内容  (必要)
  * @param params 某些推送通知方式点击弹窗可跳转, 例：{ url: 'https://abc.com' } ，没啥用,只是为了兼容旧脚本保留  (非必要)
  * @param author 通知底部作者`  (非必要)
  * @param strsummary 指定某些微信模板通知的预览信息，空则默认为desp  (非必要)
- 
+
  * sendNotifybyWxPucher 一对一推送通知功能 (text, desp, PtPin, author, strsummary )
  * @param text 通知标题  (必要)
  * @param desp 通知内容  (必要)
  * @param PtPin CK的PTPIN (必要)
  * @param author 通知底部作者`  (非必要)
  * @param strsummary 指定某些微信模板通知的预览信息，空则默认为desp  (非必要)
- 
+
  */
 //详细说明参考 https://github.com/ccwav/QLScript2.
+require('./utilsMy/__env').setEnv()
+const { COOKIESNAME } = require('./utilsMy/const')
 const querystring = require('querystring');
 const exec = require('child_process').exec;
 const $ = new Env();
@@ -192,8 +194,8 @@ if (process.env.NOTIFY_SHOWNAMETYPE) {
     ShowRemarkType = process.env.NOTIFY_SHOWNAMETYPE;
 }
 async function sendNotify(text, desp, params = {}, author = "\n================================\n好物推荐：https://u.jd.com/WLEVYTM",strsummary="") {
-    console.log(`开始发送通知...`); 
-	
+    console.log(`开始发送通知...`);
+
 	//NOTIFY_FILTERBYFILE代码来自Ca11back.
     if (process.env.NOTIFY_FILTERBYFILE) {
         var no_notify = process.env.NOTIFY_FILTERBYFILE.split('&');
@@ -448,7 +450,7 @@ async function sendNotify(text, desp, params = {}, author = "\n=================
         if (text.indexOf("任务") != -1 && (text.indexOf("新增") != -1 || text.indexOf("删除") != -1)) {
             strTitle = "脚本任务更新";
         }
-		
+
         if (strTitle) {
             const notifyRemindList = process.env.NOTIFY_NOREMIND ? process.env.NOTIFY_NOREMIND.split('&') : [];
             titleIndex = notifyRemindList.findIndex((item) => item === strTitle);
@@ -478,7 +480,7 @@ async function sendNotify(text, desp, params = {}, author = "\n=================
         }
 
         console.log("通知标题: " + strTitle);
-		
+
 		//检查黑名单屏蔽通知
         const notifySkipList = process.env.NOTIFY_SKIP_LIST ? process.env.NOTIFY_SKIP_LIST.split('&') : [];
         titleIndex = notifySkipList.findIndex((item) => item === strTitle);
@@ -661,13 +663,13 @@ async function sendNotify(text, desp, params = {}, author = "\n=================
         if (process.env["TG_USER_ID" + UseGroupNotify] && Use_tgBotNotify) {
             TG_USER_ID = process.env["TG_USER_ID" + UseGroupNotify];
         }
-		if (process.env["TG_PROXY_AUTH"]) 
+		if (process.env["TG_PROXY_AUTH"])
 			TG_PROXY_AUTH = process.env["TG_PROXY_AUTH"];
-		if (process.env["TG_PROXY_HOST"]) 
+		if (process.env["TG_PROXY_HOST"])
 			TG_PROXY_HOST = process.env["TG_PROXY_HOST"];
-		if (process.env["TG_PROXY_PORT"]) 
-			TG_PROXY_PORT = process.env["TG_PROXY_PORT"];		
-		if (process.env["TG_API_HOST"]) 
+		if (process.env["TG_PROXY_PORT"])
+			TG_PROXY_PORT = process.env["TG_PROXY_PORT"];
+		if (process.env["TG_API_HOST"])
 			TG_API_HOST = process.env["TG_API_HOST"];
 
         if (process.env["DD_BOT_TOKEN" + UseGroupNotify] && Use_ddBotNotify) {
@@ -688,7 +690,7 @@ async function sendNotify(text, desp, params = {}, author = "\n=================
         if (process.env["FS_KEY" + UseGroupNotify] && Use_fsBotNotify) {
 		    FS_KEY = process.env["FS_KEY" + UseGroupNotify];
 		}
-        
+
         if (process.env["IGOT_PUSH_KEY" + UseGroupNotify] && Use_iGotNotify) {
             IGOT_PUSH_KEY = process.env["IGOT_PUSH_KEY" + UseGroupNotify];
         }
@@ -944,14 +946,14 @@ function getQLinfo(strCK, intcreated, strTimestamp, strRemark) {
                     if (TempRemarkList[j]) {
                         if (TempRemarkList[j].length == 13) {
                             DateTimestamp = new Date(parseInt(TempRemarkList[j]));
-                            //console.log(strPtPin + ": 获取登录时间成功:" + GetDateTime(DateTimestamp));                            
+                            //console.log(strPtPin + ": 获取登录时间成功:" + GetDateTime(DateTimestamp));
                             break;
                         }
                     }
                 }
             }
         }
-		
+
 		//过期时间
         var UseDay = Math.ceil((DateToday.getTime() - DateCreated.getTime()) / 86400000);
         var LogoutDay = 30 - Math.ceil((DateToday.getTime() - DateTimestamp.getTime()) / 86400000);
@@ -1766,7 +1768,10 @@ function pushPlusNotify(text, desp) {
         if (PUSH_PLUS_TOKEN) {
 
             //desp = `<font size="3">${desp}</font>`;
-
+            Object.entries(COOKIESNAME).forEach(([cookieKey, cookieValue]) => {
+                desp = desp.replace(new RegExp(cookieKey,'g'), cookieValue);
+                text = text.replace(new RegExp(cookieKey,'g'), cookieValue);
+            })
             desp = desp.replace(/[\n\r]/g, '<br>'); // 默认为html, 不支持plaintext
             const body = {
                 token: `${PUSH_PLUS_TOKEN}`,
@@ -2127,7 +2132,7 @@ const got = require('got');
 require('dotenv').config();
 let exists = fs.existsSync('/ql/data/config/auth.json');
 let authFile="";
-if (exists) 
+if (exists)
 	authFile="/ql/data/config/auth.json"
 else
 	authFile="/ql/config/auth.json"
@@ -2142,7 +2147,7 @@ async function getToken() {
   return authConfig.token;
 }
 
-async function getEnvs(){  
+async function getEnvs(){
   const token = await getToken();
   const body = await api({
     url: 'api/envs',
@@ -2230,7 +2235,7 @@ async function DisableCk(eid){
   const body = await api({
     method: 'put',
     url: 'api/envs/disable',
-    params: { t: Date.now() },	
+    params: { t: Date.now() },
     body: JSON.stringify([eid]),
     headers: {
       Accept: 'application/json',
@@ -2246,7 +2251,7 @@ async function EnableCk(eid){
   const body = await api({
     method: 'put',
     url: 'api/envs/enable',
-    params: { t: Date.now() },	
+    params: { t: Date.now() },
     body: JSON.stringify([eid]),
     headers: {
       Accept: 'application/json',
@@ -2295,12 +2300,12 @@ async function getEnvById(eid){
 
 async function getEnvByPtPin(Ptpin){
   const envs = await getEnvs();
-  for (let i = 0; i < envs.length; i++) {	
+  for (let i = 0; i < envs.length; i++) {
 	var tempptpin = decodeURIComponent(envs[i].value.match(/pt_pin=([^; ]+)(?=;?)/) && envs[i].value.match(/pt_pin=([^; ]+)(?=;?)/)[1]);
-	if(tempptpin==Ptpin){		 
-		 return envs[i]; 
+	if(tempptpin==Ptpin){
+		 return envs[i];
 	  }
-  }  
+  }
   return "";
 };
 
