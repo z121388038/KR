@@ -9,7 +9,7 @@ const COOKIES = {
     // 'wangsi--18879085948--363082--wj19990305': 'pt_key=AAJkzPDeADCfwKyDIiQat3U240hOSZJ0gtnfpZG-rxrHnG0AIK2-5Tzrl-PBqBTjS-q3vH1gZVM; pt_pin=jd_58a0f549a24c9;',
     // 'wangsi3--18379038490--363082--wj19990305': 'pt_key=AAJkzPD6ADA5xxunKqiCCAXxOpG3ZHmXoOXViHpXlFEArxv6wZ-LeCG3dFWoXmBaYvuY-tHpR9w; pt_pin=wdxwXeyhCOyASO;',
     'wenfei--13764503929--421693': 'pt_key=AAJk1kl-ADBxj4weoc03y3xptVgB25j9lZowweISaTO8AdDEIuKm_FM29zzQl3UI-aEEfQ2ApxI; pt_pin=feiwen20;',
-    'xiaozhi--13585663140--364226': 'pt_key=AAJkzPHnADDiuj_s9CyDbJA40SvwME0alaaamE23pTKZMsipQuPG0V0U4kzEF59Xagv23srEaQI; pt_pin=jd_6f2cd0b404e58;',
+    // 'xiaozhi--13585663140--364226': 'pt_key=AAJkzPHnADDiuj_s9CyDbJA40SvwME0alaaamE23pTKZMsipQuPG0V0U4kzEF59Xagv23srEaQI; pt_pin=jd_6f2cd0b404e58;',
     '伟哥2--15800528093--514603': 'pt_key=AAJk13bEADAaDr_NuPEOrebIXQiSZcL-UGKtXgpYAmdWcH57-R6AOImhrg0CQHDO-E7LL5rBfSQ; pt_pin=jd_7c203c2698664;',
     '伟哥--18817874404--434677': 'pt_key=AAJk13KQADDZG2fRgwt-TG2NNf65cl9oxr-ckKOP0M93B6lWJzBrjx_xn7X_wqUJ01wRJpdU4Lk; pt_pin=%E5%89%81%E8%BE%A3%E6%A4%92%E5%A5%BD%E8%BE%A3;',
     '东东--18317114083--612313': 'pt_key=AAJk13VVADATnS3CjC_s1EWed0A131ameLL5QbxtJoQFzQ1MJrANV27YVyhVBq56FqEIevsUFoc; pt_pin=1831711408_m;',
