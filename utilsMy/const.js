@@ -23,7 +23,7 @@ const COOKIES = {
     'yaqing--18875015529--50920X': 'pt_key=AAJlAaAjADDFaSG7PKRHsqyHALqSlRqA9hsG8uv5d2wNJ8X5lOodTIpmT6n2HOpUUgYZDVkqGj4; pt_pin=%E9%BB%84%E4%BA%9A%E7%90%B4July;',
     // 'leiqi53--18301772447--614777': 'pt_key=AAJk1i5iADAHXFE8jS3WTtaTn8cJT0YRW5x_pzzhC77pHExrAJLl7GAXWNBbvdU1NND5nBjKtdE; pt_pin=leiqi53;',
     'chenchen--18321772130--414247': 'pt_key=AAJlAaDWADCElIOOhrz6ycBZaR1dUnl9y-UYjaE-Nb-mLsUarbIbOqwsSk4LzpqauaCKbIyho84; pt_pin=jd_5019920a9eca3;',
-    // 'chensong--15900769139--424219': 'pt_key=AAJk1i0AADATjupZFJUYI_Vu2jMZNKzRP4lXkwgwW8bBLqB42WE9qN3ms9RzBKjXpZ0Su1WpPD4; pt_pin=ninetypoints;',
+    'chensong--15900769139--424219': 'pt_key=AAJlAadyADATzKj7iayonMnaPTPw9wUrYtMdeABNOFE0qyTI5M1ivlPLRSOaiJ6gQgNjNjsJs2Q; pt_pin=ninetypoints;',
     // 'songfan1--13482258491--425113': 'pt_key=AAJk1ivEADB4qoRXbOSnUdQkjjMaRcTGz9IGcSBRxHSdLnwwBdTFqyfcT_h6y3yj2XBk5SLOIPc; pt_pin=songfan425;',
     'wangqiang--17516010987--412711': 'pt_key=AAJk-yEfADDm6qNvqVDT0mHYh65UI2CeGLCWagmx-QR_9a9Aor9f-GqC1ySBkmMhjbkp7gU0_3A; pt_pin=jd_6e7d74af721fb;',
     'wangqiang2-17657610987--411827': 'pt_key=AAJk-yKRADA0-P00iDFZi3ByAiVRg37_CBsa5ijzZrj3C1PYb7okdwKW55nfNR-n-VQXKVpC8uc; pt_pin=13725096398_p;',
