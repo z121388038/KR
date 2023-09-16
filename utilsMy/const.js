@@ -3,7 +3,7 @@ const fs = require('fs');
 const COOKIES = {
     'wangqing--18221079476': 'pt_key=AAJk50cTADDvh4qoMok34k2cv8WL_VU9Nqkk9R8LBZjREoakP-GnTHgq3X3dpkCeO6rpwjgxkXw; pt_pin=qin%E7%90%B40823;',
     'zhigang2--13321825767': 'pt_key=AAJk50cvADAblATA17O4ZDBs8_RaF5mSY2_Qusbxbbjqs9MIjqgg9a8jZpeKKGANrg-FjR_HzGI; pt_pin=jd_fMOTUvgIPZGX;',
-    'zhigang1': 'pt_key=AAJk6xlVADBP1ulG7jFeZhDaqT7JnKlcgN7LLnsJdy_8vVLfYuO2gTP92UW6RZG-nfgt_-mW1Ks; pt_pin=121388038;',
+    'zhigang1': 'pt_key=AAJlBUv9ADCs7iHmrI1ivtzlP_4EgMMQNapMEBbW-veZ4EM6WsxKnH2T95vmn-JXoq_EkUs-4NM; pt_pin=121388038;',
     'qing2--13371916837': 'pt_key=AAJk50bxADBrei6Y275lNFmYki4YQEy4nyGI8e_Mlu-Bbx09fDy6I_ShaXHAVpOgeAqp6QYm-cY; pt_pin=jd_70892f8a2c567;',
     'zhigang3--13361828371': 'pt_key=AAJk-yoQADAZtUCcZQCToc4b6cRAH2zotELardx06FNrAP1J5jt4NBQzDgiMBKgnqBv3CDkh-hI; pt_pin=jd_OzopTeZYkdKe;',
     'wangsi--18879085948--363082--wj19990305': 'pt_key=AAJk-xfIADAog57H9qR7F5in1EXRfOSH_LX0kDGbSDnmabMWvZrrsQdyxsbTpJFA-OZG5y9Cnxc; pt_pin=jd_58a0f549a24c9;',
