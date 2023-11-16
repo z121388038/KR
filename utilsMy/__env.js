@@ -37,7 +37,8 @@ const envList = {
   isCashOut: true,
   SYJ_HELP_PIN: 'qin%E7%90%B40823&jd_fMOTUvgIPZGX&121388038&%E5%89%81%E8%BE%A3%E6%A4%92%E5%A5%BD%E8%BE%A3&jd_7c203c2698664&1831711408_m',
   krjxcode: 'f618c7fc4488dfcc1ce8d6939ae05f74@a9e97c56f30220603f584c491af37258@ad95a417131afff60cfd54a16d713955',
-  DO_TEN_WATER_AGAIN: 'true'
+  DO_TEN_WATER_AGAIN: 'true',
+  FRUIT_ID: 'qMaMVPzp-wjBDxRSfM3GLzQb7o-YBwxdHkn9QMVE6s9yXA'
 }
 
 function setEnv() {
