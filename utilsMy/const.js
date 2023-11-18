@@ -31,7 +31,7 @@ const COOKIES = {
     'hupeng--13879028676--366013': 'pt_key=AAJlWD3iADB_-Pyts4gGDlP2ElZF6r80UeYfY2MIlulFgz0gYWchnXOsfpftvK8lQCPEc1VhEUg; pt_pin=jd_TUmcrAJRyPeg;',
     // 'wangqiang2-17657610987--411827': 'pt_key=AAJlI_edADCBnCCLlQP3DmjVHgBhEzz60hWeWLNeotbYABm4oBBFY1aIBcLcXnaaGFOEmyIGmjo; pt_pin=13725096398_p;',
     // 'wangqiang--17516010987--412711': 'pt_key=AAJlI_XaADDVuMUqZMTeQrVoBMWujtuwaTBhNyBBydgsVI41HbU8pzTbAerOtaRFD-8IqhRL974; pt_pin=jd_6e7d74af721fb;',
-    // 'yaqing--18875015529--50920X': 'pt_key=AAJlKpU5ADC7y0wRFCu7V-Knaf7B0IzraIHRX02OJuLMwqJFNXYjAE-dGLMBukatOIJt2LEwO6k; pt_pin=%E9%BB%84%E4%BA%9A%E7%90%B4July;',
+    'yaqing--18875015529--50920X': 'pt_key=AAJlWIopADBWhe3b5zvEyZ9R2VeFHdibVZtNyZGhKU9PynxxNLWjcvCDxx21EwRIDDu7PV-ogqI; pt_pin=%E9%BB%84%E4%BA%9A%E7%90%B4July;',
     'chenchen--18321772130--414247': 'pt_key=AAJlWD0uADD3NVOMuXj4usTVYpQFLuFecC_SWh5J1jegI8V0rBsPG_2etRy2BcY3oKAQddE6KBY; pt_pin=jd_5019920a9eca3;',
     'zhoulei--15900507586--427156': 'pt_key=AAJlWIjYADD-eMGn2nXQm4ZbLduvz35pLYBFJ_BX-paZ3snEXNd4tw1ymVQY3kMSzwEB4Yt39eE; pt_pin=wszl1987;',
     'shenyuan--13585520850--326012': 'pt_key=AAJlWDzdADDU6kyMzRCgSmYin9NdCLnTpep7eVbBFTKzoeiHvNyFC0H8129F1F5YSVPfIhICgMk; pt_pin=diormore;',
