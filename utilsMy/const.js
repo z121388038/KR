@@ -1,11 +1,11 @@
 const fs = require('fs');
 
 const COOKIES = {
-    'wangqing--18221079476': 'pt_key=AAJlZc5YADA0vVjA4jVd7is1hio2M1nLaE50uWpnZ7SUVmm6Q_MSgbXFtggHui0YMPZY61VJETI; pt_pin=qin%E7%90%B40823;',
-    'zhigang2--13321825767': 'pt_key=AAJlZc6OADBhvj3ll4uzI4ieHiV2GPoYXa8HSXUk-qFKUTkk72_7HZM1RFu-cGi1ES3AryVoEYQ; pt_pin=jd_fMOTUvgIPZGX;',
-    'zhigang1': 'pt_key=AAJlZc3rADBvtOweKPZKoyZEShC188uWcPvzXWw-HHNjq6iVk8KlxLz4ls5QLvvxxGhLcvoIt9Y; pt_pin=121388038;',
-    'qing2--13371916837': 'pt_key=AAJlZc4kADDmcw9IwI9LcdG4qRME5E-KnV8BiRnoTONlkEil7iru0dXvLU-XnZp9so1zy7h5HeY; pt_pin=jd_70892f8a2c567;',
-    'zhigang3--13361828371': 'pt_key=AAJlawk-ADCFPQFsYAucpJPXFMHR3Bkfgu8AnBmU1eCXARc44E1PDC4g4KOm56bFJ1a4lv6dUh4; pt_pin=jd_OzopTeZYkdKe;',
+    'wangqing--18221079476': 'pt_key=AAJlmMYaADCfG32K2SU1XRk1w4cgnV24gZ6AFu0bPpfmFWjsikm7ZOLEBVoXe_zE1TV_Nf_JP5c; pt_pin=qin%E7%90%B40823;',
+    'zhigang2--13321825767': 'pt_key=AAJlmMY7ADDL-2uLkE_fvLRlt1k5WFoWN3x9eOI99rvyNI9kmkDAtVUjmaXwVjbENcdbMLxoYa8; pt_pin=jd_fMOTUvgIPZGX;',
+    'zhigang1': 'pt_key=AAJlmMeHADClM8__x1_QIpGnYQjVadPVuM2mWtjIvsnB0weYmRcKItbonKptiOyfeCwnTp0epVk; pt_pin=121388038;',
+    'qing2--13371916837': 'pt_key=AAJlmMehADAAqJba77YrAkebJZHKEYSec9r55a0bhakEt_Z4GyY0O4Hn3PFmnk4PPk74emhSf8Q; pt_pin=jd_70892f8a2c567;',
+    // 'zhigang3--13361828371': 'pt_key=AAJlawk-ADCFPQFsYAucpJPXFMHR3Bkfgu8AnBmU1eCXARc44E1PDC4g4KOm56bFJ1a4lv6dUh4; pt_pin=jd_OzopTeZYkdKe;',
     // 'wangsi--18879085948--363082--wj19990305': 'pt_key=AAJlWIdeADCGMVkRano92YTcjDu_WJblDEbbiakWL5LWa_i1KTP4NTNsADlFdg2vhO1umYtSVD8; pt_pin=jd_58a0f549a24c9;',
     // 'wangsi3--18379038490--363082--wj19990305': 'pt_key=AAJlWId_ADC_uU5Et0Ztm5LqBJcXKhLbsYqFSZo9oUsu0nPaaiS3xVsGULCRM3DddhwrVDQu7Xo; pt_pin=wdxwXeyhCOyASO;',
     // '伟哥2--15800528093--514603': 'pt_key=AAJlM6YAADC2Gx_gZ7p6asbwB5nKR_oWICdrayUxMnmZdenb8TAjBP6x1MzAk4KxGXnYPU57HKw; pt_pin=jd_7c203c2698664;',
